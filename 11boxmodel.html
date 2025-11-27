@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Box Model</title>
+  <link rel="stylesheet" href="11boxmodel.css">
   <style>
     .box{
-      margin: 40px;
-      padding: 50px;
+      margin: 15px;
+      padding: 20px;
       border: 1px solid goldenrod;
         }
-        
+
     #heading{
       color: red;
-      text-align: center;
+      text-align: center;  
     }
     .text{
       color: green;
@@ -25,8 +26,23 @@
 <body>
   <div class="box">
     <h1 id="heading">Class and ID</h1>
-    <p class="text">Class can be reused multiple times.</p>
-    <p class="text">ID must e unique inside a page.</p>
+    <p class="text">Class can be reused multiple times. ID must be unique inside a page.</p>
+    <h2 id="head2">Box Model</h2>
+    <p class="text">The CSS Box Model defines how elements are sized, positioned, and rendered on a webpage.</p>
+    <ul>
+      <li>Content: The area where text or other content is displayed.</li>
+      <li>Padding: Space between the content and the element's border.</li>
+      <li>Border: A frame that wraps around the padding and content.</li>
+      <li>Margin: Space between the element's border and neighbouring elements.</li>
+    </ul>
+    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20241210112354236207/Screenshot-2024-12-10-105714.png" width="200px" alt="">
+    <p style="color: blueviolet; text-align: center; font-size: 20px;"><h2>Internal, Inline and External CSS</h2>
+    There are three primary methods to apply CSS:</p>
+    <ul >
+      <li style="color: brown;">Inline CSS: Applied directly within an HTML element's style attribute, affecting only that specific element.</li>
+      <li class="l1">Internal CSS: Defined within a "style" tag in the <head> section of an HTML document, influencing the entire page.</li>
+      <li class="l2">External CSS: Contained in a separate .css file linked to the HTML document, allowing for consistent styling across multiple pages.</li>
+    </ul>
   </div>
 </body>
 </html>
